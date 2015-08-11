@@ -1,0 +1,58 @@
+# subtitles
+
+A Python 2/3 tool to automatically download subtitles from **text search** or
+**movie files**.
+
+Git source: https://github.com/Zopieux/subtitles
+
+## License
+
+MIT. See `LICENSE`.
+
+## Dependencies
+
+Recent version of Python 2 or Python 3.
+
+No extra package dependency, except for `nose` to run the test suite.
+
+## Installation
+
+This program is best used as a command-line tool. To install said tool,
+execute:
+
+```console
+python setup.py install
+```
+
+## Usage
+
+You can refer to the built-in help using the `-h` flag.
+
+Typical usage:
+
+```console
+# List available languages for the -l/--lang flag
+subtitles languages
+
+# Download most "relevant" subtitles for the given file(s) in system locale
+subtitles for '/movies/HOME (2009) [English] [HD MP4].mp4'
+
+# Download most "relevant" subtitles for Breaking Bad S01E03 in system locale
+subtitles search breaking bad s01e03
+
+# Download most "relevant" subtitles for Breaking Bad S01E03 in French
+subtitles -l fre search breaking bad s01e03
+
+# Show help for primary command
+subtitles -h
+
+# Show help for the 'for' command
+subtitles for -h
+
+# Show help for the 'search' command
+subtitles search -h
+```
+
+## Contributing
+
+You are welcome to fork, report issues and open pull requests for this project.
