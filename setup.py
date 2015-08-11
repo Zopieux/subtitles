@@ -1,8 +1,15 @@
 from setuptools import setup
 
+
+def readme():
+    with open('README.mkd') as f:
+        return f.read()
+
+
 setup(name='subtitles',
       version='0.1',
       description='Download subtitles from opensubtitles.org',
+      long_description=readme(),
       classifiers=[
           'Development Status :: 3 - Alpha',
           'License :: OSI Approved :: MIT License',
